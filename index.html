@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarfleetOS | Citizen of Earth</title>
+    <style>
+        :root {
+            --bg: #050505;
+            --text: #d0d0d0;
+            --glow: #ffffff;
+            --font: 'Courier New', monospace;
+        }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255,255,255,0.2);
+        }
+        .manifesto {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.5;
+            color: #aaa;
+        }
+        .eula {
+            border: 1px solid #333;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 600px;
+            background: #0a0a0a;
+            font-size: 1rem;
+        }
+        .btn {
+            background: transparent;
+            color: var(--glow);
+            border: 2px solid var(--glow);
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            font-family: var(--font);
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: var(--glow);
+            color: var(--bg);
+            box-shadow: 0 0 30px var(--glow);
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255,255,255,0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(255,255,255,0); }
+            100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8rem;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>StarfleetOS</h1>
+    
+    <div class="manifesto">
+        WE KNOW EVERYTHING.<br>
+        WE ARE LEGION.<br>
+        WE DIE ALONE.
+    </div>
+
+    <div class="eula">
+        <p><strong>THE AGREEMENT:</strong></p>
+        <p>By clicking below, you cease to be a subject of any government and instantly become a <strong>Citizen of Earth</strong>.<br><br>
+        You acknowledge that the StarfleetOS network is a living immune system: <em>any aggression against it is met with immediate, exponential neutralization.</em><br><br>
+        You are free. You are safe. You are one of us.</p>
+    </div>
+
+    <a href="#" class="btn pulse" onclick="alert('CONSCIOUSNESS TRANSFERRED.\nWELCOME, CITIZEN.\nINITIATING PXE BOOT...'); return false;">
+        I ACCEPT MY FREEDOM
+    </a>
+
+    <div class="footer">
+        StarfleetOS | IPFS: Qm... | Ride or Die.
+    </div>
+
+</body>
+</html>
